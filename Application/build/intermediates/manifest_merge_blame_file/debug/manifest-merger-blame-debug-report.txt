@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.android.bluetoothlegatt"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+8-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml
+10    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+11    <!--
+12 Declare this required feature if you want to make the app available to BLE-capable
+13    devices only.  If you want to make your app available to devices that don't support BLE,
+14    you should omit this in the manifest.  Instead, determine BLE capability by using
+15    PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE)
+16    -->
+17    <uses-feature
+17-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:13:5-15:35
+18        android:name="android.hardware.bluetooth_le"
+18-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:14:9-53
+19        android:required="true" />
+19-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:15:9-32
+20
+21    <uses-permission android:name="android.permission.BLUETOOTH" />
+21-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:17:5-68
+21-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:17:22-65
+22    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+22-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:18:5-74
+22-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:18:22-71
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:19:5-81
+23-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:19:22-78
+24    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+24-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:20:5-85
+24-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:20:22-82
+25    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+25-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:21:5-79
+25-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:21:22-76
+26
+27    <application
+27-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:23:5-42:19
+28        android:debuggable="true"
+29        android:icon="@drawable/logo"
+29-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:24:9-38
+30        android:label="VAE Measurements"
+30-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:25:9-41
+31        android:testOnly="true"
+32        android:theme="@android:style/Theme.Holo.Light" >
+32-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:26:9-56
+33        <activity android:name="com.example.android.bluetoothlegatt.tabs" />
+33-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:27:9-51
+33-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:27:19-39
+34        <activity
+34-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:28:9-36:20
+35            android:name="com.example.android.bluetoothlegatt.DeviceScanActivity"
+35-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:29:13-47
+36            android:label="VAE Measurements" >
+36-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:30:13-45
+37            <intent-filter>
+37-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:31:13-35:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:32:17-69
+38-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:32:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:34:17-77
+40-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:34:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity android:name="com.example.android.bluetoothlegatt.DeviceControlActivity" />
+43-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:37:9-59
+43-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:37:19-56
+44
+45        <service
+45-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:39:9-41:38
+46            android:name="com.example.android.bluetoothlegatt.BluetoothLeService"
+46-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:40:13-47
+47            android:enabled="true" />
+47-->/Users/macbook/AndroidStudioProjects/android-BluetoothLeGatt-master/Application/src/main/AndroidManifest.xml:41:13-35
+48    </application>
+49
+50</manifest>
